@@ -1,19 +1,40 @@
 function updateSix(){
-    document.getElementById('output').innerHTML = "August 27th, 2007 marks not only the celebration of my birthday but also a date intertwined with significant events throughout history. From groundbreaking discoveries to pivotal moments in culture and politics, August 27th stands as a day of both personal significance and broader historical resonance. As I reflect on another year passing, I am reminded of the fascinating tapestry of events that have unfolded on this day, shaping the world in many ways.";
-    document.getElementById('img').src="img/calendar.png";
+    document.getElementById('output').innerHTML = "Bees are super important because they help plants make more plants. They fly around collecting pollen, which fertilizes flowers and helps them grow into fruits and veggies. Without bees, a lot of the food we love wouldn't exist. Plus, they make yummy honey that we enjoy eating. So basically, bees are like nature's little helpers, making sure everything stays green and tasty.";
+    document.getElementById('img').src="img/licensed-image-removebg-preview.png";
 }
 function updateTwo(){
-    document.getElementById('output').innerHTML = "On August 27, 1859, the Drake Well struck oil at 69½ feet, while drilling in Titusville, Pennsylvania, becoming the first driller of a productive oil well in the United States.";
-    document.getElementById('img').src="img/oil3.jpg";
+    document.getElementById('output').innerHTML = "Bees have some big problems to deal with. Pesticides, especially types called neonicotinoids, mess up their ability to find food and get back to the hive. They're losing their homes because of cities spreading out and farms taking over. Weird weather caused by climate change messes with their schedules and the flowers they like. Plus, they have to battle against bugs and diseases like Varroa mites and Nosema ceranae, which make them weak and can wipe out entire colonies. We need to step up and help bees out before it's too late, because they're super important for keeping plants growing and ecosystems healthy.";
+    document.getElementById('img').src="img/images-removebg-preview.png";
 }
 function updateThree(){
-    document.getElementById('output').innerHTML = "The Kellogg-Briand Pact was an agreement to outlaw war signed on August 27, 1928. Sometimes called the Pact of Paris for the city in which it was signed, the pact was one of many international efforts to prevent another World War, but it had little effect in stopping the rising militarism of the 1930s or preventing World War II.";
-    document.getElementById('img').src="img/pact2.webp";
+    document.getElementById('output').innerHTML = "You can help bees by planting flowers, avoiding pesticides, and spreading awareness about their importance. Creating a bee-friendly environment in your backyard or community is a great way to support these crucial pollinators.";
+    document.getElementById('img').src="img/Bee3.jpg";
 }
 function updateFour(){
-    document.getElementById('output').innerHTML = "A young German physicist, Hans von Ohain, worked for Ernst Heinkel, specializing in advanced engines, to develop the world's first jet plane, the experimental Heinkel He 178. I was the first jet-powered aircraft, it flew on Aug. 27, 1939, nearly two years before its British equivalent, the Gloster E. 28/39";
-    document.getElementById('img').src="img/plane1.webp";
+    document.getElementById('output').innerHTML = "You can help bees by planting bee-friendly flowers in your garden, avoiding pesticides, and supporting local beekeepers by buying their products. Spread the word about the importance of bees and encourage others to do the same.";
+    document.getElementById('img').src="img/beeatthisle.jpg";
 }
+
+ // Fun facts about bees
+ const beeFacts = [
+    "Bees communicate through dance, known as the 'waggle dance', to tell other bees where to find food.",
+    "A beehive can contain up to 60,000 bees during peak season.",
+    "Honey bees fly at a speed of around 15 miles per hour.",
+    "Bees have five eyes - three small ones on top of the head and two large ones in front.",
+    "Bees are essential pollinators, helping to pollinate many of the world's crops.",
+    "The queen bee can lay up to 2,000 eggs per day during the summer months."
+];
+
+// Function to display a random fun fact about bees
+function displayRandomFact() {
+    const randomIndex = Math.floor(Math.random() * beeFacts.length);
+    const fact = beeFacts[randomIndex];
+    document.getElementById('funFacts').innerText = fact;
+    document.getElementById('funFacts').style.display = 'block';
+}
+
+// Event listener to trigger display of fun fact when image is clicked
+document.getElementById('beeImage').addEventListener('click', displayRandomFact);
 
 
 

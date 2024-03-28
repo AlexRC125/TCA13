@@ -22,6 +22,10 @@ body {
     align-self: center;
     align-content: center;
     text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/15/18/15/honeycomb-2315676_640.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size: cover;
 }
 
 
@@ -101,7 +105,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a37e17;
+    background-color: #F4F1DE;
     position: sticky;
     top: 0;
   }
@@ -160,9 +164,22 @@ h1 {
     font-family: "Neuton", serif;
     font-size: 30px;
     padding-right: 55px;
+    color: aliceblue;
   }
 
 
   h1 {
     padding-bottom: 30px;
   }
+
+  /* Style the image to make it clickable */
+  #beeImage {
+    cursor: pointer;
+}
+/* Style the fun facts display */
+#funFacts {
+    display: none;
+    margin-top: 10px;
+    font-style: italic;
+    color: aliceblue;
+}
